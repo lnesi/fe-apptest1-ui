@@ -1,0 +1,42 @@
+{
+  "name": "fe-apptest1-ui",
+  "version": "1.0.0",
+  "description": "FE apptest UI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "storybook": "start-storybook -p 6006",
+    "build:storybook": "build-storybook"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lnesi/fe-apptest1-ui.git"
+  },
+  "author": "Luis Nesi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lnesi/fe-apptest1-ui/issues"
+  },
+  "homepage": "https://github.com/lnesi/fe-apptest1-ui#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.7.4",
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "@babel/preset-react": "^7.7.4",
+    "@storybook/addon-actions": "^5.2.8",
+    "@storybook/addon-links": "^5.2.8",
+    "@storybook/addons": "^5.2.8",
+    "@storybook/react": "^5.2.8",
+    "babel-loader": "^8.0.6",
+    "node-sass": "^4.13.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "sass-loader": "^8.0.0",
+    "scss-loader": "0.0.1",
+    "storybook": "^5.1.11",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {}
+}
