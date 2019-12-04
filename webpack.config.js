@@ -1,4 +1,12 @@
 const path = require('path');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
+const extractCSS = new MiniCssExtractPlugin({
+  filename: '../css/styles.css',
+  chunkFilename: '[id].css',
+  ignoreOrder: false // Enable to remove warnings about conflicting order
+});
+
 module.exports = {
   entry: path.resolve(__dirname, 'src/index.js'),
   mode: 'production',
@@ -12,6 +20,7 @@ module.exports = {
     react: 'react',
     reactDOM: 'react-dom'
   },
+  plugins: [extractCSS],
   module: {
     rules: [
       {
@@ -24,7 +33,7 @@ module.exports = {
       },
       {
         test: /\.s[ac]ss$/i,
-        use: ['style-loader', 'css-loader', 'sass-loader']
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
       }
     ]
   }

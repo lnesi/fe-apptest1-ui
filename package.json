@@ -5,7 +5,7 @@
   "main": "./dist/lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
+    "build": "webpack && cp -r src/scss dist/",
     "storybook": "start-storybook -p 6006",
     "build:storybook": "build-storybook"
   },
@@ -23,23 +23,39 @@
     "@babel/cli": "^7.7.4",
     "@babel/core": "^7.7.4",
     "@babel/preset-env": "^7.7.4",
+    "@babel/preset-flow": "^7.7.4",
     "@babel/preset-react": "^7.7.4",
     "@storybook/addon-actions": "^5.2.8",
     "@storybook/addon-links": "^5.2.8",
     "@storybook/addons": "^5.2.8",
     "@storybook/react": "^5.2.8",
+    "@storybook/theming": "^5.2.8",
+    "@testing-library/react": "^9.3.2",
+    "babel-eslint": "^10.0.3",
     "babel-loader": "^8.0.6",
+    "eslint": "^6.7.2",
+    "eslint-plugin-flowtype": "^4.5.2",
+    "eslint-plugin-jest": "^23.1.1",
+    "eslint-plugin-react": "^7.17.0",
+    "flow-bin": "^0.113.0",
+    "husky": "^3.1.0",
+    "jest": "^24.9.0",
+    "jest-junit": "^10.0.0",
+    "mini-css-extract-plugin": "^0.8.0",
     "node-sass": "^4.13.0",
+    "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "sass-loader": "^8.0.0",
     "scss-loader": "0.0.1",
+    "sierra-library": "^3.5.0",
     "storybook": "^5.1.11",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10"
   },
   "peerDependencies": {
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "sierra-library": "^3.5.0"
   }
 }
