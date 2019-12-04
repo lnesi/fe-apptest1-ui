@@ -3,7 +3,7 @@ module.exports = {
   entry: path.resolve(__dirname, 'src/index.js'),
   mode: 'production',
   output: {
-    path: path.resolve(__dirname, './build/lib'),
+    path: path.resolve(__dirname, './dist/lib'),
     filename: 'index.js',
     library: '',
     libraryTarget: 'commonjs'
