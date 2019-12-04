@@ -2,10 +2,10 @@
   "name": "fe-apptest1-ui",
   "version": "1.0.0",
   "description": "FE apptest UI",
-  "main": "./dist/lib/index.js",
+  "main": "./build/lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack && cp -r src/scss dist/",
+    "build": "webpack && babel src/ -d build && cp -r src/scss dist/",
     "storybook": "start-storybook -p 6006",
     "build:storybook": "build-storybook"
   },

@@ -18,7 +18,7 @@ export type BadgeProps = {
   type: BadgeType
 };
 
-export default function Badge(props: BadgeProps): React.ReactNode {
+export function Badge(props: BadgeProps): React.ReactNode {
   const { size, type, label } = props;
   const sizeClassName = size ? 'badge--' + size : '';
   const typeClassName = type ? 'badge--' + type : '';
@@ -39,3 +39,5 @@ Badge.propTypes = {
     'error'
   ])
 };
+
+export default Badge;

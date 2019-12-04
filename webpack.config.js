@@ -13,8 +13,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, './dist/lib'),
     filename: 'index.js',
-    library: '',
-    libraryTarget: 'commonjs'
+    libraryTarget: 'commonjs2'
   },
   externals: {
     react: 'react',
@@ -26,10 +25,7 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /(node_modules)/,
-        loader: 'babel-loader',
-        options: {
-          presets: ['@babel/preset-env', '@babel/react']
-        }
+        loader: 'babel-loader'
       },
       {
         test: /\.s[ac]ss$/i,
